@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header_left img{
+    object-fit: contain;
+    margin-left: 5px;
+    height: 80px;
+}
+.header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.header_left{
+    display: flex;
+    align-items: center;
+}
+
+.header_left span{
+    padding: 10px;
+    cursor: pointer;
+}
+.header_middle{
+    display: flex;
+    flex: 0.7;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+}
+.material_icons{
+    color: gray;
+}
+.header_middle input{
+    border: none;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    font-size: medium;
+    background-color: transparent;
+}
+.header_right{
+    display: flex;
+    padding-right: 20px;
+}
+.header_right span{
+    padding: 10px;
+    cursor: pointer;
+}
+.side_bar{
+    flex: 30%;
+    max-width: 300px;
+    padding-right: 20px;
+}
+.sidebar_compose{
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: gray;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    box-shadow:0px 2px 5px -2px red;
+
+
+}
+
+
+.sidebar_compose:hover{
+    background-color:rgb(236, 172, 172) ;
+    color: rgb(173, 24, 24);
+    font-weight: 800;
+    padding:0.1px;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow:0px 2px 5px -2px red; 
+    display: flex;
+    align-items: center;
+}
+
+ .popup{
+    
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items:flex-end;
+    text-align: center;
+}
+
+.popup_content{
+    height: 250px;
+    width: 500px;
+    background: whitesmoke;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+input{
+    margin:20px;
+    display: block;
+    width: 50%;
+    padding: 8px;
+    border: 1px solid gray;
+}
+.material-icons{
+    top: -15px;
+    right: -15px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    align-items: center;
+    align-content: center;
+
+} 
+
+.sidebar_compose span{
+  margin-right: 5px;
+}
+ .sidebaricons,.sidebarfoot{
+     display: flex;
+     align-items: center;
+     height: 40px;
+     padding: 10px;
+     border-top-right-radius: 20px;
+     border-bottom-right-radius: 20px;
+     cursor: pointer;
+     color:rgb(70, 66, 66)
+ }   
+ .sidebaricons .material-icons{
+     padding: 15px; 
+     height: 5px;
+ }
+ .sidebaricons h3 {
+     flex: 1;
+     margin-left: 10px;
+     font-size: 14px;
+     font-weight: 400;
+     text-align: left;
+     color: grey;
+ }
+.sidebaricons:hover,
+.sidebaricons:hover h3,
+.sidebaricons:hover
+{
+    background-color:rgb(236, 172, 172) ;
+    color: rgb(173, 24, 24);
+    font-weight: 800;
+    padding:0.1px; 
+}
+.sidebarfoot{
+    display: flex;
+    justify-content: center;
+}
+.sidebar_footIcons.material-icons{
+margin: 7px;
+cursor: pointer;
+}
+.main_body{
+    display: flex;
+    height: 100vh;
+}
+.body{
+    height: 100vh;
+    overflow: hidden;
+}
+.email_list{
+    flex: 1;
+    overflow: scroll;
+}
+.emaillist_settings{
+position: sticky;
+top: 0;
+display: flex;
+justify-content: space-between;
+border-bottom: 1px solid whitesmoke;
+background-color: white;
+z-index: 999;
+padding: 8px;
+color: gray;
+}
+.settings_left{
+    display: flex;
+    align-items: center;
+}
+.emaillist_setting .material-icons{
+    margin: 5px;
+    cursor: pointer;
+}
+.section{
+    display:flex;
+    align-items: center;
+    border-bottom-width: 2px;
+    padding: 15px;
+    min-width: 200px;
+    cursor: pointer;
+    color: gray;
+    border-width: 0;
+}
+.emaillist_section{
+    position: sticky;
+    top: 0;
+    display: flex;
+    background-color: white;
+    border-bottom: 1px solid whitesmoke;
+    z-index: 999;
+}
+.section_selected{
+    background-color: whitesmoke;
+    border: width 3px;
+    color: rgb(211, 38, 38);
+    border-bottom: 3px solid rgb(207, 47, 47);
+}
+.section_selected .material-icons{
+    color: rgb(187, 59, 59);
+}
+.section:hover{
+    background-color: whitesmoke;
+    border-width: 3px;
+}
+.section h4{
+    font-size: 14px;
+    margin-left: 15px;
+}
+.emailrow_options{
+    display: flex;
+    align-items: center;
+}
+.emailrow_options .material-icons{
+margin: 5px;
+}
+.emailrow_message{
+    margin: 5px;
+}
+.email_row   {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border: bottom 1px solid whitesmoke;
+    cursor: pointer;
+    z-index: 999;
+}
+.email_row:hover{
+    border-top: 1px solid whitesmoke;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.24);
+
+}
+.emailrow_message{
+    display: flex;
+    flex: 0.8px;
+    align-items: center;
+    font-size: 13px;
+}
+.emailrow_message h4{
+    width: 400px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.emailrow_title{
+    font-size: 13px;
+    flex: 0.3;
+}
+.emailrow_time{
+    padding-right: 15px;
+    font-size: 10px;
+    font-weight: bold;
+}
+.emailrow_description{
+    font-weight: 400;
+    color: grey;
+}
+
